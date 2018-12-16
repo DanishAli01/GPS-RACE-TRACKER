@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#036e64"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.example.danishali2875170.GPSTracker.AltitudeGraph
+        android:id="@+id/histogram_view"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/histogram_view">
+
+        <RelativeLayout
+            android:id="@+id/welcome_message_layout"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/welcome_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Calculations"
+                android:textColor="#ddd"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totaldistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/welcome_title"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/minspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/welcome_title"
+                android:layout_marginTop="130dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/maxspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/welcome_title"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/avgspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/welcome_title"
+                android:layout_marginTop="210dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/loss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/welcome_title"
+                android:layout_marginTop="240dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/welcome_title"
+                android:layout_marginTop="270dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/maxalt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/welcome_title"
+                android:layout_marginTop="300dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/racetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/welcome_title"
+                android:layout_marginTop="330dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#ddd"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+
+        android:id="@+id/goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="137dp"
+        android:layout_marginBottom="19dp"
+        android:background="#ddd"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="START AGIN"
+        android:textColor="#036e64" />
+
+</RelativeLayout>
